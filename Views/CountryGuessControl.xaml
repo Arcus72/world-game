@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="World_Game.Views.CountryGuessControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MinHeight="50" MinWidth="500" Padding="3" BorderThickness="1" BorderBrush="Black"
+             >
+
+    <Grid Background="LightBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="CornflowerBlue" Margin="2"
+        VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <TextBlock Text="{Binding Name}"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+
+        <Border Grid.Column="1" Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding Styles.Population}" Stretch="UniformToFill"/>
+            </Border.Background>
+
+            <TextBlock Text="{Binding Population}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+
+        <Border Grid.Column="2"  Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding Styles.SurfaceArea}" Stretch="UniformToFill"/>
+            </Border.Background>
+            <TextBlock Text="{Binding SurfaceArea}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+        <Border Grid.Column="3"  Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding  Styles.Continent}" Stretch="UniformToFill"/>
+            </Border.Background>
+            <TextBlock Text="{Binding Continent}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+        <Border Grid.Column="4"  Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding  Styles.GovernmentForm}" Stretch="UniformToFill"/>
+            </Border.Background>
+            <TextBlock Text="{Binding GovernmentForm}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+        <Border Grid.Column="5"  Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding  Styles.Region}" Stretch="UniformToFill"/>
+            </Border.Background>
+            <TextBlock Text="{Binding Region}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+        <Border Grid.Column="6" Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding  Styles.IndepYear}" Stretch="UniformToFill"/>
+            </Border.Background>
+            <TextBlock Text="{Binding IndepYear}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+        <Border Grid.Column="7"  Margin="2">
+            <Border.Background>
+                <ImageBrush ImageSource="{Binding  Styles.Language}" Stretch="UniformToFill"/>
+            </Border.Background>
+            <TextBlock Text="{Binding Language}"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               TextWrapping="Wrap"/>
+        </Border>
+
+    </Grid>
+</UserControl>
